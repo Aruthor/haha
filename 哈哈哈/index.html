@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-widthm initial-scale=1.0, maximun-sacle=1.0,user-scalable=0 " >
+  <title>首页</title>
+  <link rel="stylesheet" href="css/css1.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/vue.js"></script>
+</head>
+<body>
+  <!-- 头部-->
+  <div id='header'>
+    <div class='nav'>
+          <div class='L_nav'>
+                <img src="images/logo.png" >
+          </div>
+        <div class='R_nav'>
+           <ul >
+                 <li><input type="text" placeholder="搜索商品"  /></li>
+                 <li class="active"><a href="#" >Home</a></li>
+                 <li><a href="#">Shopping Cart</a></li>
+                 <li><a href="#">Contact</a></li>
+                 <li><a href='#' class="check">登录/注册</a></li>
+           </ul>
+        </div>
+    </div>
+  </div>
+
+  <div id='wrap'>
+  <!-- 轮播-->
+  <div id="Carousel_Wrap">
+       <div class="pic">
+             <ul id="example-1">
+                   <li ><img src='images/1.jpg'  /></li>
+                   <li><img src='images/2.jpg'  /></li>
+                   <li><img src='images/3.jpg'  /></li>
+                   <li><img src='images/4.jpg'  /></li>
+                   <li><img src='images/5.jpg' /></li>
+                    <li><img src='images/6.jpeg'  /></li>
+                    <li><img src='images/1.jpg'  /></li>
+             </ul>
+       </div>
+       <div class="tab">
+              <ul>
+                    <li class="on">1</li>
+                     <li>2</li>
+                     <li>3</li>
+                      <li>4</li>
+                      <li>5</li>
+                      <li>6</li>
+               </ul>
+       </div>
+           <div class="btn left">&lt;</div>
+           <div class="btn right">&gt;</div>
+       </div>
+  </div>
+
+  <!-- 专辑精选 -->
+  <div id='Featured-Wrap'>
+      <div class="form-group">
+          <div id='FeaturedTitle'>
+              <h4>专辑精选</h4>
+              <a href='#'>更多商品&nbsp></a>
+          </div>
+          <div id='FeaturedContent'>
+              <ul >
+                  <li  v-for="(item,index) in list">
+                      <div class='img1_box'>
+                          <img :src='item.src' width='100%' height='100%' />
+                      </div>
+                      <h5>{{item.title}}</h5>
+                      <div class='FeaturedText'>
+                          <p>{{item.number}}</p>
+                          <p>{{item.writer}}</p>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <!-- 专辑精选结束 -->
+  </div>
+
+  <!-- 单品推荐 -->
+  <div id='SingleProduct'>
+    <div id='SingleProduct_title'>
+      <h4>单品推荐</h4>
+      <div class='SingleProduct_list'>
+        <p>商品购：</p>
+        <ul >
+          <li v-for="item in list1">{{item.all}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class='SingleProduct_content'>
+      <ul >
+        <li v-for="(item,index) in list2">
+          <div class='img2_box'>
+              <img :src='item.src' width='100%' height='100%' />
+          </div>
+          <h5>{{item.commodity}}</h5>
+          <div class='SingleProduct_text'>
+            <p>{{item.online}}</p>
+            <a href='#'>{{item.shop}}</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<!-- 专辑精选开始 -->
+  <div id='Talentselection'>
+    <div class="form-group">
+        <div id='TalentTitle'>
+            <h4>达人精选</h4>
+            <a href='#'>更多达人&nbsp></a>
+        </div>
+        <div id='TalentContent'>
+            <ul>
+                <li class="item" v-for="item in list">
+                    <a href="#" class="pic" :style="{backgroundImage: 'url('+item.url+')'}"></a>
+                    <!--<a href="#" class="pic" style=" background: url(images/user_img1.jpg) no-repeat; background-size: cover; "></a>-->
+                    <a href="#" class="headImg"><img :src="item.src" alt="#"></a>
+                    <div class="info">
+                        <a href="#" class="info-title">虽虽酱</a>
+                        <p><i class="icon-star"></i>9645</p>
+                        <p>擅长领域: <b>Q版</b></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--大家都在逛-->
+  <div id="">
+
+  </div>
+
+  <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-link">
+              <div class="footer-link__item">
+                  <h4 class="footer-title">关于我们</h4>
+                  <ul class="footer-list">
+                      <li class="item"><a href="#">关于我们</a></li>
+                      <li class="item"><a href="#">加入我们</a></li>
+                      <li class="item"><a href="#">联系我们</a></li>
+                      <li class="item"><a href="#">标签集</a></li>
+                  </ul>
+              </div>
+              <div class="footer-link__item">
+                  <h4 class="footer-title">手机应用</h4>
+                  <ul class="footer-list">
+                      <li class="item"><a href="#">关于我们</a></li>
+                      <li class="item"><a href="#">帮助中心</a></li>
+                      <li class="item"><a href="#">加入我们</a></li>
+                  </ul>
+              </div>
+              <div class="footer-link__item">
+                  <div class="footer-orcode">
+                      <img src="images/hahaha.png" alt="#">
+                  </div>
+                  <div class="orcode-text">
+                      <p>扫描二维码</p>
+                      <p>下载tang手机客户端</p>
+                  </div>
+              </div>
+              <div class="footer-link__item">
+                  <h4 class="footer-title">关注我们</h4>
+                  <ul class="footer-list">
+                      <li class="item"><a href="#">关于我们</a></li>
+                      <li class="item"><a href="#">帮助中心</a></li>
+                  </ul>
+              </div>
+              <div class="footer-link__item">
+                  <h4 class="footer-title">友情链接</h4>
+                  <ul class="footer-list">
+                      <li class="item"><a href="#">关于我们</a></li>
+                      <li class="item"><a href="#">帮助中心</a></li>
+                      <li class="item"><a href="#">关于我们</a></li>
+                      <li class="item"><a href="#">帮助中心</a></li>
+
+                  </ul>
+              </div>
+          </div>
+          <div class="fopter-copyright">
+              <p>©2017 ***hahaha 版权所有。</p>
+          </div>
+      </div>
+  </footer>
+
+
+<script src="js/move.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/indexVue.js"></script>
+</body>
+</html>
