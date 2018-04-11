@@ -8,6 +8,7 @@
 * */
 
 function move(obj,json,time,callback) {
+    window.onresize = arguments.callee;
     window.requestAnimationFrame = window.requestAnimationFrame || function (fn) {return setTimeout(fn,1000/60)};
     window.cancelAnimationFrame = window.cancelAnimationFrame || clearTimeout;
 

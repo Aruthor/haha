@@ -15,17 +15,33 @@ var vm=new Vue({
 var vm1=new Vue({
     el: '#SingleProduct',
     data: {
-        list1:[
-            {all:"全部"}, {all:'上衣'}, {all:'裤子'}, {all:'连衣裙'}, {all:'花裙'}, {all:'牛仔裤'}
-        ],
-        list2: [
-            {src: 'images/main_img6.jpg',commodity:'夹克',online:1791+"人游览",shop:'良品购'},
-            {src: 'images/main_img7.jpg',commodity:'夹克',online:1815+"人游览",shop:'良品购'},
-            {src: 'images/main_img8.jpg',commodity:'连衣裙',online:1821+"人游览",shop:'良品购'},
-            {src: 'images/main_img9.jpg',commodity:'裤子',online:18541+"人游览",shop:'良品购'},
-            {src: 'images/main_img10.jpg',commodity:'手换',online:121191+"人游览",shop:'良品购'}
+        list1:[{
+            all:"全部",
+            list2: [
+                {src: 'images/main_img6.jpg',commodity:'夹克',online:1791+"人游览",shop:'良品购'},
+                {src: 'images/main_img7.jpg',commodity:'夹克',online:1815+"人游览",shop:'良品购'},
+                {src: 'images/main_img8.jpg',commodity:'连衣裙',online:1821+"人游览",shop:'良品购'},
+                {src: 'images/main_img9.jpg',commodity:'裤子',online:18541+"人游览",shop:'良品购'},
+                {src: 'images/main_img10.jpg',commodity:'手换',online:121191+"人游览",shop:'良品购'}
+                ]
+            },
+            {
+                all:"上衣"
+
+            },
+            {
+                all:"裤子"
+
+            },
+            {
+                all:"牛仔"
+
+            },
+            {
+                all:"连衣裙"
+            }
         ]
-    }
+}
 })
 
 var vm3=new Vue({

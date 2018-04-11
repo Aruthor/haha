@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-widthm initial-scale=1.0, maximun-sacle=1.0,user-scalable=0 " >
   <title>首页</title>
+    <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/css1.css">
-  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.min.js"></script>
   <script src="js/vue.js"></script>
 </head>
 <body>
@@ -19,8 +20,8 @@
            <ul >
                  <li><input type="text" placeholder="搜索商品"  /></li>
                  <li class="active"><a href="#" >Home</a></li>
-                 <li><a href="#">Shopping Cart</a></li>
-                 <li><a href="#">Contact</a></li>
+                 <li><a href="Shop.html">Shopping Cart</a></li>
+                 <li><a href="message.html">Message</a></li>
                  <li><a href='#' class="check">登录/注册</a></li>
            </ul>
         </div>
@@ -88,20 +89,20 @@
       <div class='SingleProduct_list'>
         <p>商品购：</p>
         <ul >
-          <li v-for="item in list1">{{item.all}}</li>
+          <li v-for="(item,index) in list1">{{item.all}}</li>
         </ul>
       </div>
     </div>
-    <div class='SingleProduct_content'>
+    <div class='SingleProduct_content' v-for="(item,index) in list1">
       <ul >
-        <li v-for="(item,index) in list2">
+        <li v-for="items in item.list2">
           <div class='img2_box'>
-              <img :src='item.src' width='100%' height='100%' />
+              <img :src='items.src' width='100%' height='100%' />
           </div>
-          <h5>{{item.commodity}}</h5>
+          <h5>{{items.commodity}}</h5>
           <div class='SingleProduct_text'>
-            <p>{{item.online}}</p>
-            <a href='#'>{{item.shop}}</a>
+            <p>{{items.online}}</p>
+            <a href='#'>{{items.shop}}</a>
           </div>
         </li>
       </ul>
@@ -189,7 +190,24 @@
           </div>
       </div>
   </footer>
+<script>
+    /* 商品购 */
+    (function() {
+        var aLi = document.querySelectorAll('#SingleProduct #SingleProduct_title .SingleProduct_list ul li'),
+                aUl = document.querySelectorAll('#SingleProduct .SingleProduct_content ul'),
+                len = aLi.length;
+        index = 0;
 
+        for (var i = 0; i < len; i++) {
+            aLi[i].index = i;
+            aLi[i].onclick = function() {
+                aUl[index].className = '';
+                index = this.index;
+                aUl[index].className = 'on'
+            }
+        }
+    })();
+</script>
 
 <script src="js/move.js"></script>
 <script src="js/carousel.js"></script>

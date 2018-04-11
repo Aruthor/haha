@@ -1,0 +1,210 @@
+
+
+h2{
+    margin:0;
+    font-size: 12px;
+}
+
+/* 头部开始 */
+#header {
+    margin:0 auto;
+    width:100%;
+    background:#363940;
+}
+#header .nav {
+    overflow:hidden;
+}
+#header .nav .L_nav {
+    float:left;
+    margin-left:50px;
+}
+#header .nav .L_nav img{
+    height: 50px;
+    width: 150px;
+    display: inline;
+}
+#header .nav .R_nav {
+    float:right;
+    margin-right:50px ;
+}
+#header .nav .R_nav > ul {
+    overflow: hidden;
+}
+#header .nav .R_nav > ul > li {
+    float:left;
+    padding:15px;
+    font-size: 16px;
+    color:#B6B4A0;
+    cursor:pointer;
+}
+#header .nav .R_nav > ul > li >input{
+    margin-right:40px;
+}
+#header .nav .R_nav > ul > li >a:hover {
+    color:white;
+}
+#header .nav .R_nav > ul > li > a{
+    color: #cccccc;
+}
+#header .nav .R_nav > ul > li > .check{
+    display:block;
+    width:100px;
+    color:red;
+    text-align:center;
+    line-height:25px;
+    background:white;
+    border-radius:5px;
+}
+
+/* 头部结束 */
+
+/*main*/
+.main {
+    width: 50%;
+    margin: 50px auto;
+    box-sizing:border-box;
+}
+
+.task-input {
+    width: 99%;
+    height:30px;
+    outline: 0;
+    border: 1px solid #ccc;
+}
+
+.task-count{
+    display: flex;
+    margin:10px 0;
+}
+
+
+
+.task-count li:nth-child(1){
+    padding: 5px 0 0 10px;
+}
+
+.action {
+    text-align: center;
+    display: flex;
+}
+.action a {
+    margin: 0px 10px;
+    flex: 1;
+    padding: 5px 0;
+    color: #777;
+
+}
+
+.action a:nth-child(3){
+    margin-right: 0;
+}
+
+.active {
+    border: 1px solid rgba(175, 47, 47, 0.2);
+}
+
+.tasks {
+    background-color: #fff;
+}
+.no-task-tip {
+    padding:10px 0 10px 10px;
+    display: block;
+    border-bottom: 1px solid #ededed;
+    color:#777;
+}
+
+.big-title {
+    color: #222;
+    margin: 40px 0 20px ;
+}
+
+
+.todo-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.todo-list li {
+    position: relative;
+    font-size: 18px;
+    border-bottom: 1px solid #ededed;
+}
+
+.todo-list li:hover {
+    background-color: #fafafa;
+}
+
+
+.todo-list li.editing {
+    border-bottom: none;
+    padding: 0;
+}
+
+.todo-list li.editing .edit {
+    display: block;
+    width: 506px;
+    padding: 13px 17px 12px 17px;
+    margin: 0 0 0 43px;
+}
+
+.todo-list li.editing .view {
+    display: none;
+}
+
+
+
+.todo-list li label {
+    white-space: pre-line;
+    word-break: break-all;
+    padding: 15px 60px 15px 15px;
+    margin-left: 45px;
+    display: block;
+    line-height: 1.2;
+    transition: color 0.4s;
+}
+
+.todo-list li.completed label {
+    color: #d9d9d9;
+    text-decoration: line-through;
+}
+
+
+.todo-list li .destroy {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    width: 40px;
+    height: 45px;
+    margin: auto 0;
+    font-size: 30px;
+    color: #cc9a9a;
+    opacity: .5;
+    border: none;
+    background: none;
+    transition: color 0.2s ease-out;
+}
+
+.todo-list li .destroy:hover {
+    color: #af5b5e;
+}
+
+.todo-list li .destroy:after {
+    content: '×';
+    height: 20px;
+}
+
+.todo-list li:hover .destroy {
+    display: block;
+
+}
+
+.todo-list li .edit {
+    display: none;
+}
+
+.todo-list li.editing:last-child {
+    margin-bottom: -1px;
+}

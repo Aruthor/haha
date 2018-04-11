@@ -1,41 +1,36 @@
-* {margin:0; padding:0;}
-ol,ul {list-style-type:none;}
-a {text-decoration:none;}
-img {border:none;}
-html,body {
-    background:#F0F1F2;
-}
+
 /* 头部开始 */
-  #header {
+#header {
     margin:0 auto;
     width:100%;
     background:#363940;
-  }
-  #header .nav {
+}
+#header .nav {
     overflow:hidden;
-  }
-  #header .nav .L_nav {
+}
+#header .nav .L_nav {
     float:left;
     margin-left:50px;
-  }
+}
 #header .nav .L_nav img{
     height: 50px;
     width: 150px;
     display: inline;
 }
-  #header .nav .R_nav {
+#header .nav .R_nav {
     float:right;
     margin-right:50px ;
-  }
-  #header .nav .R_nav > ul {
+}
+#header .nav .R_nav > ul {
     overflow: hidden;
-  }
-  #header .nav .R_nav > ul > li {
+}
+#header .nav .R_nav > ul > li {
     float:left;
-    padding:12px;
+    padding:15px;
+    font-size: 16px;
     color:#B6B4A0;
     cursor:pointer;
-  }
+}
 #header .nav .R_nav > ul > li >input{
     margin-right:40px;
 }
@@ -70,7 +65,7 @@ html,body {
       margin:20px auto;
   }
   .pic{
-      width: 100%;
+      width: 70%;
       height: 100%;
   }
   .pic ul{
@@ -82,7 +77,7 @@ html,body {
   }
   .pic li{
       float: left;
-      width: 1400px;
+      width: 1200px;
       height: 400px;
       font-size: 100px;
       text-align: center;
@@ -460,4 +455,21 @@ p {
 .fopter-copyright p {
     line-height: 36px;
     color: #888;
+}
+#ul1{
+    border: 1px solid orange;
+    width: 310px;
+
+}
+#q{
+    border: 1px solid;
+    font-size: 16px;
+    position:absolute;
+    left: 700px;
+    top: 15px;
+}
+#ul1 li{
+    list-style-type: none;
+    display: block;
+    z-index: 1;
 }

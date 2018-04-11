@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/message.css">
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<!-- 头部-->
+<div id='header'>
+    <div class='nav'>
+        <div class='L_nav'>
+            <img src="images/logo.png" >
+        </div>
+        <div class='R_nav'>
+            <ul >
+                <li><input type="text" placeholder="搜索商品"  /></li>
+                <li class="active"><a href="index.html" >Home</a></li>
+                <li><a href="Shop.html">Shopping Cart</a></li>
+                <li><a href="#">Message</a></li>
+                <li><a href='#' class="check">登录/注册</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--main-->
+<div class="main">
+    <h3 class="big-title">发表留言:</h3>
+    <input type="text" placeholder="例如:我的大刀早已饥渴难耐;      提示:+回车可以发布"
+            class="task-input"
+           @keyup.13="addTodo"
+           v-model="todo"
+    />
+    <h3 class="big-title">留言栏:</h3>
+    <div class="tasks">
+        <span class="no-task-tip" v-show="!lists.length">还没有发布任何留言</span>
+        <ul class="todo-list">
+            <li class="todo" v-for="item in lists" :class="{editing:item==edtorTodo}">
+                <div class="view" >
+                    <label @dblclick="edorTodo(item)">{{item.title}}</label>
+                    <button class="destroy" @click="deleteTodo(item)"></button>
+                </div>
+                <input class="edit" type="text"
+                       v-focus="item==edtorTodo"
+                       @blur="edyorTodoed(item)"
+                       v-model="item.title"
+                       @keyup.esc="cancelTodo(item)"
+                       @keyup.enter="edtorTodoed(item)"
+                />
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<script src="js/message.js"></script>
+</body>
+</html>

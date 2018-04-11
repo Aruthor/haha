@@ -58,3 +58,22 @@
 })();
 function getStyle(obj) {return obj.currentStyle||getComputedStyle(obj)}
 
+//
+var oq=document.getElementById('q');
+var oul=document.getElementById('ul1');
+
+oq.onkeyup=function () {
+    var oscript=document.createElement('script');
+    //oscript.src='https://suggest.taobao.com/sug?code=utf-8&q=ba&_ksTS=1517156325847_672&callback=jsonp673&k=1&area=c2c&bucketid=11'
+    oscript.src='https://suggest.taobao.com/sug?code=utf-8&q='+this.value+'&_ksTS=1517156325847_672&callback=fn1'
+    document.body.appendChild(oscript);
+}
+function fn1(data){
+    var html='';
+    // console.log(data.result);
+    for(var i=0;i<data.result.length;i++){
+        html+='<li>'+data.result[i]+'</li>'
+    }
+    oul.innerHTML=html;
+}
+
