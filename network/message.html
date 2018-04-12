@@ -34,25 +34,39 @@
            @keyup.13="addTodo"
            v-model="todo"
     />
-    <h3 class="big-title">留言栏:</h3>
-    <div class="tasks">
-        <span class="no-task-tip" v-show="!lists.length">还没有发布任何留言</span>
-        <ul class="todo-list">
-            <li class="todo" v-for="item in lists" :class="{editing:item==edtorTodo}">
-                <div class="view" >
-                    <label @dblclick="edorTodo(item)">{{item.title}}</label>
-                    <button class="destroy" @click="deleteTodo(item)"></button>
-                </div>
-                <input class="edit" type="text"
-                       v-focus="item==edtorTodo"
-                       @blur="edyorTodoed(item)"
-                       v-model="item.title"
-                       @keyup.esc="cancelTodo(item)"
-                       @keyup.enter="edtorTodoed(item)"
-                />
+    <button id="btn" @click="addTodo">发送</button>
+
+
+    <h3 class="big-title">留言栏:
+        <ul class="task-count">
+            <li>{{nocheckelength}}个留言未阅览</li>
+            <li class="action">
+                <a class="active" href="#all" >所有留言</a>
+                <a href="#unfinshed">未阅览的任务</a>
+                <a href="#finshed">阅览过的留言</a>
             </li>
         </ul>
-    </div>
+    </h3>
+
+    <div class="tasks">
+    <span class="no-task-tip" v-show="!lists.length" >还没有添加任何任务</span>
+    <ul class="todo-list">
+        <li class="todo" v-for="item in filterList" :class="{completed:item.ischecked,editing:item==edtorTodo}" >
+            <div class="view">
+                <input class="toggle" type="checkbox" v-model="item.ischecked"  />
+                <label @dblclick="edorTodo(item)">{{item.title}}</label>
+                <button class="destroy" @click="deleteTodo(item)"></button>
+            </div>
+            <input class="edit" type="text"
+                   v-focus="item==edtorTodo"
+                   @blur="edtorTodoed(item)"
+                   v-model="item.title"
+                   @keyup.esc="cancelTodo(item)"
+                   @keyup.enter="edtorTodoed(item)"
+            />
+        </li>
+    </ul>
+</div>
 </div>
 
 
