@@ -62,7 +62,7 @@
       <div class="form-group">
           <div id='FeaturedTitle'>
               <h4>专辑精选</h4>
-              <a href='#'>更多商品&nbsp></a>
+              <a href='particulars.html'>更多商品&nbsp></a>
           </div>
           <div id='FeaturedContent'>
               <ul >
@@ -114,7 +114,7 @@
     <div class="form-group">
         <div id='TalentTitle'>
             <h4>达人精选</h4>
-            <a href='#'>更多达人&nbsp></a>
+            <a href='particulars.html'>更多达人&nbsp></a>
         </div>
         <div id='TalentContent'>
             <ul>
@@ -190,24 +190,7 @@
           </div>
       </div>
   </footer>
-<script>
-    /* 商品购 */
-    (function() {
-        var aLi = document.querySelectorAll('#SingleProduct #SingleProduct_title .SingleProduct_list ul li'),
-                aUl = document.querySelectorAll('#SingleProduct .SingleProduct_content ul'),
-                len = aLi.length;
-        index = 0;
 
-        for (var i = 0; i < len; i++) {
-            aLi[i].index = i;
-            aLi[i].onclick = function() {
-                aUl[index].className = '';
-                index = this.index;
-                aUl[index].className = 'on'
-            }
-        }
-    })();
-</script>
 
 <script src="js/move.js"></script>
 <script src="js/carousel.js"></script>

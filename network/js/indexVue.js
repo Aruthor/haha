@@ -3,11 +3,11 @@ var vm=new Vue({
         el:'#Featured-Wrap',
         data:{
             list:[
-                {src:'images/main_img1.jpg',title:"你的书写工具需要一个庇护所",number:68+"人"+2255+"收藏",writer:'By Moollly'},
-                {src:'images/main_img2.jpg',title:"你好，男孩"},
-                {src:'images/main_img3.jpg',title:"你好，女孩",number:68+"人"+2255+"收藏",writer:'By Moollly'},
-                {src:'images/main_img4.jpg',title:"你好，男孩",number:68+"人"+2255+"收藏",writer:'By Moollly'},
-                {src:'images/main_img5.jpg',title:"你好，男孩"}
+                {src:'images/main_img1.jpg',title:"你的书写工具需要一个庇护所",number:68+"人"+ 25+"收藏",writer:'By Moollly'},
+                {src:'images/main_img2.jpg',title:"微风拂过脸",number:268+"人"+ 155+"收藏",writer:'Liss Kollly'},
+                {src:'images/main_img3.jpg',title:"时尚牛仔男孩",number:628+"人"+235+"收藏",writer:'Cherry'},
+                {src:'images/main_img4.jpg',title:"清新的宁宁",number:68+"人"+ 25+"收藏",writer:'Bad Ma1ollly'},
+                {src:'images/main_img5.jpg',title:"孤寂的莫",number:128+"人"+ 65+"收藏",writer:'An Moollly'}
             ]
 
         }

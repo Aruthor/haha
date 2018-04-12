@@ -123,7 +123,12 @@ a:hover{
     float: left;
     height: 100%;
 }
-
+.colors{
+    border: 1px dashed orange ;
+    width: 252px;
+    box-sizing: border-box;
+    padding: 19px 0;
+}
 .order_lists .list_chk{
     position: relative;
     width: 50px;

@@ -250,6 +250,8 @@
   .SingleProduct_content > ul > li:hover {
       top: -3px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+      z-index: 99;
+      transition: 0.2s;
   }
   .img2_box {
     width:210px;
@@ -405,25 +407,25 @@ p {
 }
 .footer-link {
     margin-bottom: 28px;
-    height: 160px;
+    height: 100px;
 }
 .footer-link__item {
     float: left;
     width: 20%;
-    height: 100%;
+    height: 80%;
     border-left: 1px solid #cfd0d1;
     box-sizing: border-box;
 }
 .footer-title {
     margin-left: 34px;
-    line-height: 38px;
+    line-height: 28px;
     color: #444;
 }
 .footer-list .item {
     float: left;
     height: auto;
     width: 50%;
-    line-height: 28px;
+    line-height: 20px;
     text-align: center;
     background: none;
     border: none;
@@ -439,8 +441,8 @@ p {
 }
 .footer-orcode img {
     display: inline-block;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
 }
 .orcode-text {
     width: 100%;
@@ -453,7 +455,7 @@ p {
     text-align: center;
 }
 .fopter-copyright p {
-    line-height: 36px;
+    line-height: 20px;
     color: #888;
 }
 #ul1{
