@@ -1,0 +1,228 @@
+* {margin:0px; padding:0px;}
+ol,ul {list-style-type:none;}
+a {text-decoration:none;}
+img {border:none;}
+body{
+  /*background:url('../images/banbar.jpg') no-repeat 0 0;*/
+  /*background-size: 100% 100%;*/
+
+}
+/* 开头 */
+#head {
+  position:relative;
+  margin:0 auto;
+  width:1200px;
+  height:80px;
+}
+#img-box {
+  float:left;
+  width:300px;
+  height:80px;
+}
+#header-text-L {
+  float:left;
+  width:130px;
+  height:80px;
+  font-size:22px;
+  color: #666;
+  line-height:80px;
+  text-align:center;
+}
+#header-text-R {
+  position:absolute;
+  right:0;
+  bottom:6px;
+  font-size:14px;
+}
+#header-text-R:hover {
+  color:red;
+  text-decoration:underline;
+}
+/* 网络安全法 */
+#Regulations-wrap {
+  width:100%;
+  height:40px;
+  background:#FFF8F0;
+}
+#Regulations-content > i {
+  margin-right:4px;
+}
+#Regulations-content {
+  margin:0 auto;
+  width:990px;
+  color:#989898;
+  font-size:12px;
+  text-align:center;
+  line-height:40px;
+}
+/* 登录 */
+#wrap {
+  margin:0 auto 10px;
+  width:100%;
+  height:560px;
+  /*background:#8CCAE0;*/
+  background:url('../images/banbar.jpg') no-repeat 0 0;
+  background-size: 100% 100%;
+}
+#logIn-wrap {
+  margin:0 auto;
+  padding: 20px 0 0 0;
+  width:1200px;
+  height:460px;
+  /*background:url('../images/banbar.jpg') no-repeat 0 0/1200px 480px;;*/
+}
+#logIn {
+  position:relative;
+  margin:0 0 0 850px;
+  width:350px;
+  height:400px;
+  background:white;
+  z-index: 2;
+  box-shadow: 1px 1px 5px ;
+
+
+
+}
+#logIn-header {
+  height:40px;
+  color:#999999;
+  font-size:12px;
+  text-align:center;
+  line-height:40px;
+  background:#FFF8F0;
+}
+#logIn-header i {
+  margin-right:4px;
+}
+#account {
+  height:40px;
+  color:#E4393C;
+  font-size:22px;
+  font-weight:bold;
+  text-align:center;
+  line-height:40px;
+}
+#logIn-content > ul li:first-child {
+  margin-top:30px;
+}
+#logIn-content > ul li:last-child {
+  margin-bottom:20px;
+  text-align:right;
+}
+#logIn-content > ul li {
+  margin:14px 0 0 25px;
+  width:298px;
+}
+#logIn-content > ul li i {
+  font-size:41px;
+  vertical-align: middle;
+  border:1px solid #000;
+  border-right:none;
+  background:#F3F3F3;
+}
+#logIn-content ul li input {
+  padding: 0 0 0 8px;
+  vertical-align: middle;
+  width:242px;
+  height:40px;
+}
+#logIn-content ul li a {
+  color:#000;
+  font-size:14px;
+}
+#logIn-content ul li a:hover {
+  color:red;
+  text-decoration:underline;
+}
+#btn {
+  display:block;
+  margin-left:25px;
+  width:300px;
+  height:35px;
+  color:#fff;
+  font-size:18px;
+  line-height:35px;
+  text-align:center;
+  font-weight:bold;
+  background:#E4393C;
+}
+#logIn-foot {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:50px;
+  background:#FEF7EF;
+}
+#logIn-foot > ul > li {
+  float:left;
+  margin:16px 0 0 0;
+  padding:0 8px 0 8px;
+  border-right:1px solid #000;
+  vertical-align: middle;
+}
+#logIn-foot > ul > li > i {
+  margin-right:4px;
+  font-size:16px;
+  vertical-align: middle;
+}
+#logIn-foot > ul > li > a {
+  font-size:12px;
+}
+#logIn-foot > ul > li.on {
+  border:none;
+}
+#logIn-foot > ul > li > i.qq {
+  color:blue;
+}
+#logIn-foot > ul > li > i.weixin {
+  color:#00CC00;
+}
+#logIn-foot > ul > li > a:hover {
+  color:red;
+  text-decoration:underline;
+}
+#logIn-foot > ul > li.immediately {
+  margin: 16px 0 0 140px;
+  color:#B61D1D;
+  cursor:pointer;
+}
+#logIn-foot > ul > li.immediately:hover {
+  text-decoration: underline;
+}
+/* 页底 */
+#foot-wrap {
+  width:100%;
+}
+#foot-content {
+  margin:0 auto;
+  padding:0 0 0 150px;
+  width:1050px;
+}
+#foot-content > ul {
+  overflow:hidden;
+  margin-bottom:8px;
+}
+#foot-content > ul > li {
+  float:left;
+  padding: 0 10px;
+  font-size:14px;
+  border-right:1px solid #000;
+}
+#foot-content > ul > li > a {
+  color:#000;
+  font-size:14px;
+}
+#foot-content > ul > li > a:hover {
+  color:red;
+  text-decoration:underline;
+}
+#foot-content > ul > li:last-child {
+  border-right:none;
+}
+#foot-text {
+  height:20px;
+  width: 100%;
+  font-size:12px;
+  line-height:20px;
+  text-align:center;
+}
