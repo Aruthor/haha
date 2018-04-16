@@ -1,4 +1,9 @@
 
+h2{
+    margin:0;
+    font-size: 12px;
+}
+
 /* 头部开始 */
 #header {
     margin:0 auto;
@@ -34,13 +39,13 @@
 #header .nav .R_nav > ul > li >input{
     margin-right:40px;
 }
-  #header .nav .R_nav > ul > li >a:hover {
+#header .nav .R_nav > ul > li >a:hover {
     color:blue;
-  }
+}
 #header .nav .R_nav > ul > li > a{
     color: #cccccc;
 }
-  #header .nav .R_nav > ul > li > .check{
+#header .nav .R_nav > ul > li > .check{
     display:block;
     width:100px;
     color:red;
@@ -48,7 +53,7 @@
     line-height:25px;
     background:white;
     border-radius:5px;
-  }
+}
 
 /* 头部结束 */
   #wrap {
@@ -60,7 +65,7 @@
   #Carousel_Wrap{
       overflow: hidden;
       position: relative;
-      width: 70%;
+      width: 1200px;
       height: 400px;
       margin:20px auto;
   }
