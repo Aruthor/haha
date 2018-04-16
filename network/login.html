@@ -32,7 +32,7 @@
         <div id='logIn-content'>
           <ul>
             <li>
-              <i class='iconfont icon-people'></i><input type='text' value='' placeholder='邮箱验证' id='text' />
+              <i class='iconfont icon-people'></i><input type='text' value='' placeholder='邮箱验证/手机登录' id='text' />
             </li>
             <li>
               <i class='iconfont icon-lock'></i><input type='password' value='' placeholder='请不要输入密码' id='text2' />
@@ -121,16 +121,32 @@
         }
 
 
-        oBtn.onclick = function() {
+  //登录按钮
+        document.onkeyup=function (e) {
+//          console.log(e.keyCode)
+          if(e.keyCode==13){
+              var oInp_val = document.getElementById('text').value;
+
+              var re=/^[\w-]+@[\da-z]{2,5}(\.[a-z]{2,3}){1,3}/gi
+              var res=/^[1][3-8][0-9]{9}/g
+              if(re.test(oInp_val)==true||res.test(oInp_val)==true){
+                window.location.href="index.html"
+              }else{
+                alert('邮箱格式/手机格式错误');
+              }
+          }
+        }
+
+        oBtn.onclick = function () {
           var oInp_val = document.getElementById('text').value;
-          var atpos = oInp_val.indexOf("@");
-        	var dotpos = oInp_val.lastIndexOf(".");
-          if (atpos < 1 || dotpos < atpos+2 || dotpos+2 >= oInp_val.length){
-        		alert("不是一个有效的 e-mail 地址o!");
-        	};
-          // if ( oInp_val == null || oInp_val = '') {
-          //   alert("必须填写");
-          // };
+          var re=/^[\w-]+@[\da-z]{2,5}(\.[a-z]{2,3}){1,3}/gi
+          var res=/^[1][3-8][0-9]{9}/g
+          if(re.test(oInp_val)==true||res.test(oInp_val)==true){
+            window.location.href="index.html"
+          }else{
+            alert('邮箱格式/手机格式错误');
+          }
+
         }
 </script>
 </html>
