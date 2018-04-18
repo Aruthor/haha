@@ -18,7 +18,12 @@
           </div>
         <div class='R_nav'>
            <ul >
-                 <li><input type="text" placeholder="搜索商品"  /></li>
+                 <li>
+                     <input type="text" placeholder="搜索商品" id="qs"  />
+                     <ul id="ul">
+
+                     </ul>
+                 </li>
                  <li class="active"><a href="#" >Home</a></li>
                  <li><a href="Shop.html">Shopping Cart</a></li>
                  <li><a href="message.html">Message</a></li>
@@ -195,5 +200,24 @@
 <script src="js/move.js"></script>
 <script src="js/carousel.js"></script>
 <script src="js/indexVue.js"></script>
+<script>
+
+    var oul=document.getElementById('ul');
+    var oq=document.getElementById('qs');
+    oq.onkeyup=function () {
+        var oscript=document.createElement('script');
+        oscript.src='https://suggest.taobao.com/sug?code=utf-8&q='+this.value+'&callback=fn1'
+        document.body.appendChild(oscript)
+    }
+    function fn1(data){
+        var html='';
+        // console.log(data.result);
+        for(var i=0;i<data.result.length;i++){
+            html+='<li>'+data.result[i]+'</li>'
+        }
+        oul.innerHTML=html;
+    }
+</script>
+
 </body>
 </html>

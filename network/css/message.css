@@ -1,10 +1,27 @@
-
-
 h2{
     margin:0;
     font-size: 12px;
 }
-
+#ul{
+    width: 318px;
+    z-index: 3;
+    position: absolute;
+    top: 38px;
+    background: #fff;
+}
+#ul li{
+    list-style-type: none;
+    display: block;
+    z-index: 31;
+    color: #666666;
+    line-height: 20px;
+}
+#qs{
+    width: 314px;
+    z-index: 3;
+    float: left;
+    outline: none;
+}
 /* 头部开始 */
 #header {
     margin:0 auto;
@@ -41,7 +58,7 @@ h2{
     margin-right:40px;
 }
 #header .nav .R_nav > ul > li >a:hover {
-    color:blue;
+    color:#ffffff;
 }
 #header .nav .R_nav > ul > li > a{
     color: #cccccc;
@@ -49,11 +66,14 @@ h2{
 #header .nav .R_nav > ul > li > .check{
     display:block;
     width:100px;
-    color:red;
+    color: darkred;
     text-align:center;
-    line-height:25px;
+    line-height:22px;
     background:white;
     border-radius:5px;
+}
+#header .nav .R_nav > ul > li > .check:hover{
+    color:red;
 }
 
 /* 头部结束 */
