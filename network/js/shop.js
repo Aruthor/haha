@@ -58,9 +58,7 @@ function count() {
     for(var i=0;i<aspan.length;i++){
         b+=parseFloat(aspan[i].innerHTML)//商品数
         c+=parseFloat(ems[i].innerHTML)//价格
-
     }
-
 }
 function tab(b){
     var abtn=alist[b].getElementsByTagName('button');

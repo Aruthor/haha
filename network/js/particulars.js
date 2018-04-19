@@ -15,8 +15,7 @@ $(function () {
                 "left":w*j+'px', //一个li代表5*5的宽高
                 "top":h*i+'px',
                 "transform":
-                "translateX("+(30*j-60)+"px)"//水平方向的间距
-                +"tarnslateY("+(30*i-60)+"px)", //垂直方向的间隔
+                "translateX(" +(30*j-60)+"px)"+ "translateY("+(30*i-60)+"px)",
                 "background-size":"cover"  //铺满
             }).find('.box').css({
                     "background":"url(images/pass/"+(i*collums+j)+".jpg)",

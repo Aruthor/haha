@@ -16,7 +16,6 @@ oInp2.onclick = function() {
     aI[0].style.background = '#F3F3F3';
 }
 
-
 //登录按钮
 document.onkeyup=function (e) {
 //          console.log(e.keyCode)
