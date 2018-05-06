@@ -62,6 +62,7 @@ h2{
 }
 #header .nav .R_nav > ul > li > a{
     color: #cccccc;
+    text-decoration: none;
 }
 #header .nav .R_nav > ul > li > .check{
     display:block;

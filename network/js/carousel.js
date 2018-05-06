@@ -54,7 +54,7 @@
             }
         })
     }
-    timer = setInterval(auto,1000);
+    timer = setInterval(auto,2000);
 })();
 function getStyle(obj) {return obj.currentStyle||getComputedStyle(obj)}
 

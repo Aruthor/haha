@@ -73,7 +73,7 @@
               <ul >
                   <li  v-for="(item,index) in list">
                       <div class='img1_box'>
-                          <img :src='item.src' width='100%' height='100%' />
+                          <a :href="'./goods/goods_'+item.id+'.html'"><img :src='item.src' width='100%' height='100%' /></a>
                       </div>
                       <h5>{{item.title}}</h5>
                       <div class='FeaturedText'>
