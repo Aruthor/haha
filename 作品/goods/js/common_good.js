@@ -25,7 +25,7 @@ oleft.onmouseout=function(){
 //鼠标移动事件
 oleft.onmousemove=function(ev){
     var e=ev || event;
-    var left=e.clientX-FloatDiv.offsetWidth/2-350;
+    var left=e.clientX-FloatDiv.offsetWidth/2-150;
     var top=e.clientY-FloatDiv.offsetHeight/2-150;
     if(left<0){left=0}
     if(top<0){top=0}
