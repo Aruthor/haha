@@ -1,0 +1,302 @@
+h2{
+    margin:0;
+    font-size: 12px;
+}
+#ul{
+    width: 318px;
+    z-index: 3;
+    position: absolute;
+    top: 38px;
+    background: #fff;
+}
+#ul li{
+    list-style-type: none;
+    display: block;
+    z-index: 31;
+    color: #666666;
+    line-height: 20px;
+}
+#qs{
+    width: 314px;
+    z-index: 3;
+    float: left;
+    outline: none;
+}
+/* 头部开始 */
+#header {
+    margin:0 auto;
+    width:100%;
+    background:#363940;
+}
+#header .nav {
+    overflow:hidden;
+}
+#header .nav .L_nav {
+    float:left;
+    margin-left:50px;
+}
+#header .nav .L_nav img{
+    height: 50px;
+    width: 150px;
+    display: inline;
+}
+#header .nav .R_nav {
+    float:right;
+    margin-right:50px ;
+}
+#header .nav .R_nav > ul {
+    overflow: hidden;
+}
+#header .nav .R_nav > ul > li {
+    float:left;
+    padding:15px;
+    font-size: 16px;
+    color:#B6B4A0;
+    cursor:pointer;
+}
+#header .nav .R_nav > ul > li >input{
+    margin-right:40px;
+}
+#header .nav .R_nav > ul > li >a:hover {
+    color:#ffffff;
+
+}
+#header .nav .R_nav > ul > li > a{
+    color: #cccccc;
+    text-decoration: none;
+}
+#header .nav .R_nav > ul > li > .check{
+    display:block;
+    width:100px;
+    color: darkred;
+    text-align:center;
+    line-height:22px;
+    background:white;
+    border-radius:5px;
+}
+#header .nav .R_nav > ul > li > .check:hover{
+    color:red;
+}
+
+/* 头部结束 */
+/*main*/
+.main{
+     margin: 100px auto;
+     width: 1200px;
+     height: 200px;
+    /*background: red;*/
+    position: relative;
+}
+h2{
+    color: darkorange;
+    margin-bottom:20px ;
+}
+ul,li{
+    list-style-type: none;
+}
+.main_top{
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.A_a{
+    width: 100px;
+    float: left;
+    left: 30px;
+    position: absolute;
+}
+.A_b{
+    width: 100px;
+    float: left;
+    left: 160px;
+    position: absolute;
+}
+.A_c{
+    width: 100px;
+    float: left;
+    left: 720px;
+    position: absolute;
+}
+.A_d{
+    width: 100px;
+    float: left;
+    left: 820px;
+    margin-right: 30px;
+    position: absolute;
+}
+.A_e{
+    width: 100px;
+    float: left;
+    left: 920px;
+    margin-right: 30px;
+    position: absolute;
+}
+.A_f{
+    left: 1020px;
+    width: 100px;
+    float: left;
+    margin-right: 30px;
+    position: absolute;
+}
+.main_centent{
+    float: left;
+    position: relative;
+    width: 100%;
+    top: 50px;
+    display: block;
+}
+
+.B_a{
+    position: absolute;
+    float: left;
+    left: 40px;
+    width: 30px;
+    height: auto;
+}
+.B_b{
+    position: absolute;
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.B_b1{
+
+    position: absolute;
+    float: left;
+    width: 100px;
+    display: none;
+    height: 100px;
+    left: 160px;
+    top: -55px;
+    z-index: 1;
+}
+.B_b img{
+    max-height: 80px;
+    max-width: 80px;
+    position: absolute;
+    float: left;
+    left: 70px ;
+}
+.B_b1 img{
+    height: 200px;
+    width: 200px;
+}
+.B_c{
+    height: auto;
+    position: absolute;
+    width: 200px;
+    float: left;
+    left: 160px;
+}
+.B_d{
+    height: auto;
+    position: absolute;
+    width: 200px;
+    float: left;
+    left: 420px;
+    color: #666;
+    padding: 5px;
+}
+.B_d2{
+    height: auto;
+    position: absolute;
+    width: 200px;
+    float: left;
+    left: 420px;
+    color: #666;
+    border: 1px orange dashed;
+    padding: 4px;
+}
+
+.B_f1{
+    position: absolute;
+    width: 100px;
+    float: left;
+    left: 720px;
+    color: #666;
+}
+.B_f2{
+    position: relative;
+    width: 100px;
+    float: left;
+    left: 720px;
+    top: 20px;
+}
+.B_g{
+    position: relative;
+    width: 100px;
+    float: left;
+    left: 720px;
+    top: 10px;
+}
+.B_g a{
+    width: 12px;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #666;
+}
+.B_h{
+    position: relative;
+    width: 100px;
+    float: left;
+    left: 720px;
+    top: 10px;
+    color: red;
+}
+.B_i{
+    position: relative;
+    width: 100px;
+    float: left;
+    left: 720px;
+    top: 10px;
+}
+.list{
+    display: block;
+    width: 1200px;
+    height: 100px;
+
+}
+
+/*footer*/
+#main_footer{
+    width: 1200px;
+    bottom: -1px;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+}
+.C_a{
+    position: relative;
+    height: 50px;
+    background: #cccccc;
+}
+.C_b{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+.C_b >span ,.C_c strong{
+    color: orangered;
+}
+.C_c{
+    position: absolute;
+    left: 200px;
+    top: 10px;
+}
+.C_d{
+    position: absolute;
+    right: 0;
+}
+.C_d > button{
+    padding: 12px;
+    width: 100px;
+    text-align: center;
+    background: #666666;
+    border: 1px outset;
+    color: #ffffff;
+    font-size: 20px;
+}
